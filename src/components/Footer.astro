@@ -1,0 +1,46 @@
+---
+const today = new Date();
+---
+
+<footer>
+	&copy; {today.getFullYear()} Starodubov Konstantin.
+	<div class="social-links">
+		<a href="https://vk.com/xakuorg" target="_blank" rel="noopener noreferrer">
+			<span class="sr-only">Follow Vk</span>
+			<img
+			  src="/vk.png"
+			  alt="Vk icon"
+			  width="32"
+			  height="32"
+			>
+			<a href="https://t.me/SKWTMB" target="_blank" rel="noopener noreferrer">
+				<span class="sr-only">Follow Telegram</span>
+				<img
+				  src="/telegram.png"
+				  alt="Telegram icon"
+				  width="32"
+				  height="32"
+				>
+	</div>
+</footer>
+<style>
+	footer {
+		padding: 2em 1em 6em 1em;
+		background: linear-gradient(var(--gray-gradient)) no-repeat;
+		color: rgb(var(--gray));
+		text-align: center;
+	}
+	.social-links {
+		display: flex;
+		justify-content: center;
+		gap: 1em;
+		margin-top: 1em;
+	}
+	.social-links a {
+		text-decoration: none;
+		color: rgb(var(--gray));
+	}
+	.social-links a:hover {
+		color: rgb(var(--gray-dark));
+	}
+</style>
